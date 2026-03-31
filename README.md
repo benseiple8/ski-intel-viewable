@@ -1,13 +1,13 @@
-# Ski Intel – Data Architecture & Modeling Pipeline
+# Snow Intel – Data Architecture & Modeling Pipeline
 
-This repository documents the end-to-end data architecture behind **Ski Intel**:  
+This repository documents the end-to-end data architecture behind **Snow Intel**:  
 how raw weather, snow report, terrain, and demand data flow through normalization,  
 terrain-bucket simulation, ranking, pattern extraction, and ultimately into skier-facing summaries.
 
 The goal of this system is not to predict weather in isolation, but to translate  
 weather uncertainty into **skiable conditions and constraints** that reflect terrain, exposure, durability, crowding, and real-world resort behavior.
 
-At its core, Ski Intel is a **bucket-first inference system**.
+At its core, Snow Intel is a **bucket-first inference system**.
 
 It does not begin with mountain-wide summaries or aspect-level narratives.  
 Instead, it simulates the full terrain lattice, ranks every terrain bucket, identifies  
@@ -143,7 +143,7 @@ RETUNE --> PAT
 
 ## Core modeling principle
 
-Ski Intel is built around a **full terrain lattice**, not a resort-wide average.
+Snow Intel is built around a **full terrain lattice**, not a resort-wide average.
 
 ### Canonical grain
 
@@ -281,7 +281,7 @@ Transforms narrative evidence into skier-facing output.
 
 ## What this architecture optimizes for
 
-Ski Intel is designed to answer:
+Snow Intel is designed to answer:
 
 > **Where should I ski, what should I avoid, what will change, and why?**
 
